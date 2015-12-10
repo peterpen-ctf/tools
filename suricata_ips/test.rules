@@ -1,0 +1,1 @@
+drop tcp any any -> any any (content: "python"; msg: "python detected!"; nfq_set_mark:0x2/0xffffffff; sid:53911;)
